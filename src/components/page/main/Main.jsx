@@ -1,4 +1,4 @@
-import photo from '../../../img/photo.png'
+import photo from './img/photo.png'
 import styles from './Main.module.css'
 
 const Main = () => {
@@ -9,14 +9,14 @@ const Main = () => {
                     <div className={styles.homeContent}>
                         <div className={styles.homeData}>
                             <div className={styles.homeSubtitle}>
-                                <h3>Hello, <span>I'm</span></h3>
+                                <h3>Hello, <span>I`m</span></h3>
                                 <h1 className={styles.homeTitle}>Jensy Figueroa</h1>
                                 <h2 className={styles.homeEducation}>Full Stack Developer</h2>
                                 <p className={styles.homeDescription}>
-                                    I'm a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
+                                    I`m a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
                                 </p>
 
-                                <a href="#contact" className={styles.button}>Let's talk</a>
+                                <a href="#contact" className={styles.button}>Let`s talk</a>
                             </div>
 
                             <div className={styles.homeSocial}>
