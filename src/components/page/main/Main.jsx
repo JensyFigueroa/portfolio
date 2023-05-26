@@ -1,4 +1,4 @@
-import photo from './img/photo.png'
+import photo from './img/Photo.png'
 import styles from './Main.module.css'
 
 const Main = () => {
