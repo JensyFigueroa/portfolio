@@ -9,7 +9,9 @@
 .fixed{
     position: fixed;
     width: 100%;
-    background-color: var(--container-color);
+    background-color: hsla(0, 0%, 10%, .5);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     top: 0;
     left: 0;
     z-index: var(--z-fixed );

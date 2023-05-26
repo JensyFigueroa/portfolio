@@ -43,19 +43,19 @@ export default function Navbar() {
                             <NavLink to='/' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/about' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>About me</NavLink>
+                            <NavLink to='#about' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>About me</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/repos' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>GitHub Repos</NavLink>
+                            <NavLink to='#repos' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>GitHub Repos</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/projects' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Projects </NavLink>
+                            <NavLink to='#projects' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Projects </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/kills' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Kills</NavLink>
+                            <NavLink to='#kills' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Skills</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/contact' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Contact</NavLink>
+                            <NavLink to='#contact' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Contact</NavLink>
                         </li>
                     </ul>
 

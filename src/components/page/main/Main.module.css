@@ -84,3 +84,68 @@
     width: 900px;
     transform: translateX(-120px);
 } */
+
+
+/* ############### ABOUT ################## */
+.aboutContainer{
+    row-gap: 2.5rem;
+}
+
+.aboutData{
+     text-align: center;
+}
+
+.aboutDescription{
+    margin-bottom: 2rem;
+}
+
+.aboutImg{
+    justify-self: center;
+}
+
+.aboutBlod{
+    width: 320px;
+}
+
+.aboutBlod path{
+    stroke: var(--first-color);
+}
+
+/* ########### Skills ########### */
+.skills{
+    border-color: var(--container-color);
+}
+
+.skillsContainer{
+    padding-bottom: 2rem;
+    row-gap: 3.5rem;
+}
+
+.skillsData{
+    text-align: center;
+}
+
+.skillsDescription{
+    margin-bottom: 2rem;
+}
+
+.skillsContent,
+.skillsGroup{
+    display: grid;
+}
+
+.skillsContent{
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.skillsGroup{
+    row-gap: 1rem; 
+}
+
+.skillsItem{
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}

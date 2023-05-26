@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import photo from './img/Photo.png'
 import styles from './Main.module.css'
 
@@ -20,15 +21,15 @@ const Main = () => {
                             </div>
 
                             <div className={styles.homeSocial}>
-                                <a href="https://github.com/JensyFigueroa?tab=repositories" target="_blank" className={styles.linkSocial}>
+                                <Link to="https://github.com/JensyFigueroa?tab=repositories" target="_blank" className={styles.linkSocial}>
                                     <i className="ri-github-fill"></i>
-                                </a>
-                                <a href="https://dribbble.com/" target="_blank" className={styles.linkSocial}>
+                                </Link>
+                                <Link to="https://dribbble.com/" target="_blank" className={styles.linkSocial}>
                                     <i className="ri-dribbble-line"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/jensy-figueroa-duran-0a069a8b/" target="_blank" className={styles.linkSocial}>
+                                </Link>
+                                <Link to="https://www.linkedin.com/in/jensy-figueroa-duran-0a069a8b/" target="_blank" className={styles.linkSocial}>
                                     <i className="ri-linkedin-box-line"></i>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className={styles.homeImage}>
@@ -66,20 +67,62 @@ const Main = () => {
                                 </svg>
 
                             </div>
-
-
-
-
-
-
                         </div>
                     </div>
                 </div>
             </section>
 
             {/*#########  ABOUT ########*/}
-            <section className="about section" id="about">
-                
+            <section className={`${styles.about} section`} id="about">
+                <div className={`${styles.aboutContainer} container grid`}>
+                    <div className={styles.aboutData}>
+                        <h3 className="sectionSubtitle">
+                            My <span>Intro</span>
+                        </h3>
+                        <h2 className="sectionTitle">
+                            About me
+                        </h2>
+
+                        <p className={styles.aboutDescription}>
+                            I`m a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
+                        </p>
+                        <Link to='#contact' className={styles.button}>Contact Me</Link>
+                        <div className={styles.aboutImage}>
+                            <svg className={styles.aboutBlod} viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="maskBorder" mask-type="alpha">
+                                    <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+      171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+      448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+      270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+      439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
+                                </mask>
+                                <g mask="url(#maskBorder)">
+                                    <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+
+                                    <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+      192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+      580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+      40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+      175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10" />
+                                </g>
+
+                                <rect x="37" width="476" height="300" fill="url(#pattern3)" />
+
+                                <defs>
+                                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                                    </pattern>
+
+                                    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                                    </pattern>
+
+                                    <image className='aboutImg' id="imageBorder" width="640" height="940" href={photo} />
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             {/*#########  REPO GITHUB ########*/}
@@ -93,11 +136,44 @@ const Main = () => {
             </section>
 
             {/*#########  KILLS ########*/}
-            <section className="kills section" id="kills">
+            <section className={`${styles.skills} section`} id="kills">
+                <div className={`${styles.skillsContainer} container grid`}>
+                    <div className={styles.skillsData}>
+                        <h3 className="sectionSubtitle">
+                            Favorite <span>Skills</span>
+                        </h3>
 
+                        <h2 className="sectionTitle">
+                            My kills
+                        </h2>
+
+                        <p className={styles.skillsDescription}>
+                            See fully my skills to develop the projects for you
+                        </p>
+                        <Link to="#projects" className={styles.button}>See projects</Link>
+                    </div>
+                    <div className={styles.skillsContent}>
+                        <ol className={styles.skillsGroup}>
+                            <li className={styles.skillsItem}>HTML & CSS</li>
+                            <li className={styles.skillsItem}>Javascript</li>
+                            <li className={styles.skillsItem}>Bootstrap</li>
+                            <li className={styles.skillsItem}>Tailwind</li>
+                            <li className={styles.skillsItem}>React</li>
+                            <li className={styles.skillsItem}>Redux</li>
+                        </ol>
+                        <ol className="skillsGroup" >
+                            <li className={styles.skillsItem}>Git & Github</li>
+                            <li className={styles.skillsItem}>Node.js</li>
+                            <li className={styles.skillsItem}>Expresss</li>
+                            <li className={styles.skillsItem}>Sequelize</li>
+                            <li className={styles.skillsItem}>Postgress - MySQL</li>
+                            <li className={styles.skillsItem}>Postman</li>
+                        </ol>
+                    </div>
+                </div>
             </section>
 
-             {/*#########  CONTACT ########*/}
+            {/*#########  CONTACT ########*/}
             <section className="contact section" id="contact">
 
             </section>
