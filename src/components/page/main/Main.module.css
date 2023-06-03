@@ -123,13 +123,14 @@
 
 .projectsContainter{
     display: flex;
+    flex-wrap: wrap;
     row-gap: 2rem;
     justify-content: center;
     padding-block: 1rem;  
 }
 
 .projectsCard{
-    width: 100%;
+    width: 40%;
     height: 30%;
     position: relative;
     border-radius: 1rem;
@@ -233,4 +234,51 @@
 
 .skillsItem::marker{
     color: var(--first-color);
+}
+
+/* ########### Contact ########### */
+
+.contactContainer{
+    padding-top: 1rem;
+}
+
+.contactForm,
+.contactGroup{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contactForm{
+    position: relative;
+}
+
+.contactInput{
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    background-color: var(--container-color);
+    color: var(--title-color);
+}
+
+.contactInput::placeholder{
+    color: var(--text-color);
+}
+
+.contactForm textarea{
+    height: 11rem;
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.contactButton{
+    justify-self: center;
+    cursor: pointer;
+}
+
+.contactMessage{
+    position: absolute;
+    left: 0;
+    bottom: 4.5rem;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+
 }

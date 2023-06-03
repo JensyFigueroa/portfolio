@@ -151,7 +151,7 @@ const Main = () => {
                         <div className={styles.projectsModal}>
                             <span className={styles.projectsSubtitle}>Web</span>
                             <h2 className={styles.projectsTitle}>Modern website</h2>
-                            <Link to='#' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                            <Link to='#' className={styles.projectsButton} target="_blank" >View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
 
@@ -161,7 +161,7 @@ const Main = () => {
                         <div className={styles.projectsModal}>
                             <span className={styles.projectsSubtitle}>Web</span>
                             <h2 className={styles.projectsTitle}>Modern website</h2>
-                            <Link to='https://videogames-five.vercel.app/' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                            <Link to='https://videogames-five.vercel.app/' target="_blank" className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
 
@@ -171,7 +171,7 @@ const Main = () => {
                         <div className={styles.projectsModal}>
                             <span className={styles.projectsSubtitle}>Web</span>
                             <h2 className={styles.projectsTitle}>Modern website</h2>
-                            <Link to='https://workify-alpha.vercel.app/' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                            <Link to='https://workify-alpha.vercel.app/' target="_blank" className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
                      
@@ -219,7 +219,33 @@ const Main = () => {
 
             {/*#########  CONTACT ########*/}
             <section className="contact section" id="contact">
+                <h3 className="sectionSubtitle">
+                    Get in <span>Touch</span>
+                </h3>
 
+                <h2 className="sectionTitle">
+                    Contact me
+                </h2>
+
+                <div className={`${styles.contactContainer} container grid`}>
+                    <form action="" className={styles.contactForm} id="contactForm">
+                        <div className={styles.contactGroup}>
+                            <input type="text" name='userName' placeholder='Enter your name' required className={styles.contactInput} />
+
+                            <input type="email" name='userEmail' placeholder='Enter your Email' required className={styles.contactInput} />
+                            
+                            <textarea className={styles.contactInput}  name="userProject" placeholder='Enter your message' id="" cols="50" rows="10" required></textarea>
+
+                            <p className="contactMessage" id="contactMessage">
+                                
+                            </p>
+
+                            <button type='submit' className={`${styles.button} contactButton`}>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </div>
     )
