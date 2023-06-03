@@ -143,7 +143,7 @@ const Main = () => {
                     Recent projects
                 </h2>
 
-                <div className={`${styles.projectsContainter} contaitnes grid`}>
+                <div className={`${styles.projectsContainter} container`}>
                     <article className={styles.projectsCard}>
                         
                         <img src={rickMorty} alt="rick & morty" className={styles.projectsImg} />
