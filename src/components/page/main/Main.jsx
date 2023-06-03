@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
 import photo from './img/Photo.png'
+import rickMorty from '../../../assets/img/rick&morty.png'
+import videoGames from '../../../assets/img/videoGames.png'
+import workify from '../../../assets/img/workify.png'
 import styles from './Main.module.css'
 
 const Main = () => {
@@ -131,8 +134,49 @@ const Main = () => {
             </section>
 
             {/*#########  PROJECTS ########*/}
-            <section className="projects section" id="projects">
+            <section className={`${styles.projects} section`} id="projects">
+                <h3 className="sectionSubtitle">
+                    My <span>Jobs</span>
+                </h3>
 
+                <h2 className="sectionTitle">
+                    Recent projects
+                </h2>
+
+                <div className={`${styles.projectsContainter} contaitnes grid`}>
+                    <article className={styles.projectsCard}>
+                        
+                        <img src={rickMorty} alt="rick & morty" className={styles.projectsImg} />
+
+                        <div className={styles.projectsModal}>
+                            <span className={styles.projectsSubtitle}>Web</span>
+                            <h2 className={styles.projectsTitle}>Modern website</h2>
+                            <Link to='#' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                        </div>
+                    </article>
+
+                    <article className={styles.projectsCard}>
+                        <img src={videoGames} alt="videoGames" className={styles.projectsImg} />
+
+                        <div className={styles.projectsModal}>
+                            <span className={styles.projectsSubtitle}>Web</span>
+                            <h2 className={styles.projectsTitle}>Modern website</h2>
+                            <Link to='#' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                        </div>
+                    </article>
+
+                    <article className={styles.projectsCard}>
+                        <img src={workify} alt="workify" className={styles.projectsImg} />
+
+                        <div className={styles.projectsModal}>
+                            <span className={styles.projectsSubtitle}>Web</span>
+                            <h2 className={styles.projectsTitle}>Modern website</h2>
+                            <Link to='#' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                        </div>
+                    </article>
+                     
+
+                </div>
             </section>
 
             {/*#########  KILLS ########*/}
