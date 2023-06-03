@@ -9,7 +9,7 @@ export default function Navbar() {
         width: window.innerWidth,
     });
 
-    if (screenSize.width > 1024 & clickBurguer) {
+    if (screenSize.width < 1024 & clickBurguer) {
         setClickBurguer(false)
     }
 

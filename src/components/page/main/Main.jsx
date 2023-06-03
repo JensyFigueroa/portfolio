@@ -161,7 +161,7 @@ const Main = () => {
                         <div className={styles.projectsModal}>
                             <span className={styles.projectsSubtitle}>Web</span>
                             <h2 className={styles.projectsTitle}>Modern website</h2>
-                            <Link to='#' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                            <Link to='https://videogames-five.vercel.app/' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
 
@@ -171,7 +171,7 @@ const Main = () => {
                         <div className={styles.projectsModal}>
                             <span className={styles.projectsSubtitle}>Web</span>
                             <h2 className={styles.projectsTitle}>Modern website</h2>
-                            <Link to='#' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
+                            <Link to='https://workify-alpha.vercel.app/' className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
                      
