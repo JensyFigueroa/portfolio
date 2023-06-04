@@ -14,23 +14,23 @@ const Main = () => {
     const [msgSend, setMsgSend] = useState('')
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_ifxb97y', 'template_437gwo8', form.current, 'wIiAlyzD36CHSaAQX')
-        .then((result) => {
-            console.log(result.text);
-            setMsgSend('Message sent successfully ✅')
-            setTimeout(()=>{
-                setMsgSend('')
-            }, 3000)
-            form.current.reset()
-        }, (error) => {
-            console.log(error.text);
-            setMsgSend('Message was not sent correctly (server error) ❌')
-            setTimeout(()=>{
-                setMsgSend('')
-            }, 3000)
-        });
+        e.preventDefault();
+
+        emailjs.sendForm('service_ifxb97y', 'template_437gwo8', form.current, 'wIiAlyzD36CHSaAQX')
+            .then((result) => {
+                console.log(result.text);
+                setMsgSend('Message sent successfully ✅')
+                setTimeout(() => {
+                    setMsgSend('')
+                }, 3000)
+                form.current.reset()
+            }, (error) => {
+                console.log(error.text);
+                setMsgSend('Message was not sent correctly (server error) ❌')
+                setTimeout(() => {
+                    setMsgSend('')
+                }, 3000)
+            });
     };
 
     return (//################### HOME ###############################
@@ -44,10 +44,10 @@ const Main = () => {
                                 <h1 className={styles.homeTitle}>Jensy Figueroa</h1>
                                 <h2 className={styles.homeEducation}>Full Stack Developer</h2>
                                 <p className={styles.homeDescription}>
-                                    I`m a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
+                                    I'm a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
                                 </p>
 
-                                <a href="#contact" className={styles.button}>Let`s talk</a>
+                                <a href="#contact" className={styles.button}>Let's talk</a>
                             </div>
 
                             <div className={styles.homeSocial}>
@@ -116,7 +116,7 @@ const Main = () => {
                         <p className={styles.aboutDescription}>
                             I`m a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
                         </p>
-                        <Link to='#contact' className={styles.button}>Contact Me</Link>
+                        <a href='#contact' className={styles.button}>Contact Me</a>
                         <div className={styles.aboutImage}>
                             <svg className={styles.aboutBlod} viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="maskBorder" mask-type="alpha">
@@ -155,11 +155,6 @@ const Main = () => {
                 </div>
             </section>
 
-            {/*#########  REPO GITHUB ########*/}
-            <section className="reposGit section" id="reposGit">
-
-            </section>
-
             {/*#########  PROJECTS ########*/}
             <section className={`${styles.projects} section`} id="projects">
                 <h3 className="sectionSubtitle">
@@ -172,7 +167,7 @@ const Main = () => {
 
                 <div className={`${styles.projectsContainter} container`}>
                     <article className={styles.projectsCard}>
-                        
+
                         <img src={rickMorty} alt="rick & morty" className={styles.projectsImg} />
 
                         <div className={styles.projectsModal}>
@@ -201,9 +196,14 @@ const Main = () => {
                             <Link to='https://workify-alpha.vercel.app/' target="_blank" className={styles.projectsButton}>View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
-                     
+
 
                 </div>
+            </section>
+
+            {/*#########  REPO GITHUB ########*/}
+            <section className="reposGit section" id="reposGit">
+
             </section>
 
             {/*#########  KILLS ########*/}
@@ -225,20 +225,20 @@ const Main = () => {
                     </div>
                     <div className={styles.skillsContent}>
                         <ol className={styles.skillsGroup}>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#e45f18'}} className="ri-html5-fill"></i> HTML & CSS</li>
-                            <li className={styles.skillsItem}><i  style={{fontSize:'30px', color:'#e4c518'}} className="ri-javascript-fill"></i> Javascript</li>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#18d0e4'}} className="ri-sketching"></i> Tailwind</li>
-                            <li className={styles.skillsItem}> <i style={{fontSize:'30px', color:'#a018e4'}} className="ri-bootstrap-fill"></i> Bootstrap</li>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#18d0e4'}} className="ri-reactjs-fill"></i> React</li>
-                            <li className={styles.skillsItem}> <i style={{fontSize:'30px', color:'#a018e4'}} className="fa-solid fa-atom"></i> Redux</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#e45f18' }} className="ri-html5-fill"></i> HTML & CSS</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#e4c518' }} className="ri-javascript-fill"></i> Javascript</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#18d0e4' }} className="ri-sketching"></i> Tailwind</li>
+                            <li className={styles.skillsItem}> <i style={{ fontSize: '30px', color: '#a018e4' }} className="ri-bootstrap-fill"></i> Bootstrap</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#18d0e4' }} className="ri-reactjs-fill"></i> React</li>
+                            <li className={styles.skillsItem}> <i style={{ fontSize: '30px', color: '#a018e4' }} className="fa-solid fa-atom"></i> Redux</li>
                         </ol>
                         <ol className="skillsGroup" >
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px'}} className="ri-github-fill"></i> Git & Github</li>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#02c94e'}} className="fa-brands fa-node-js"></i> Node.js</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px' }} className="ri-github-fill"></i> Git & Github</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#02c94e' }} className="fa-brands fa-node-js"></i> Node.js</li>
                             <li className={styles.skillsItem}>Express</li>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#0269c9'}}  className="fa-solid fa-cube"></i> Sequelize</li>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#95a9ba'}} className="fa-solid fa-database"></i> Postgress - MySQL</li>
-                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#fc7813'}} className="fa-solid fa-person-skating"></i> Postman</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#0269c9' }} className="fa-solid fa-cube"></i> Sequelize</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#95a9ba' }} className="fa-solid fa-database"></i> Postgress - MySQL</li>
+                            <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#fc7813' }} className="fa-solid fa-person-skating"></i> Postman</li>
                         </ol>
                     </div>
                 </div>
@@ -260,11 +260,11 @@ const Main = () => {
                             <input type="text" name='userName' placeholder='Enter your name' required className={styles.contactInput} />
 
                             <input type="email" name='userEmail' placeholder='Enter your Email' required className={styles.contactInput} />
-                            
-                            <textarea className={styles.contactInput}  name="message" placeholder='Enter your message' id="" cols="50" rows="10" required></textarea>
+
+                            <textarea className={styles.contactInput} name="message" placeholder='Enter your message' id="" cols="50" rows="10" required></textarea>
 
                             <p className="contactMessage" id="contactMessage">{msgSend}
-                                
+
                             </p>
 
                             <button type='submit' className={`${styles.button} contactButton`}>

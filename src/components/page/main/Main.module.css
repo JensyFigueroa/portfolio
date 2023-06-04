@@ -169,12 +169,12 @@
 
 .projectsSubtitle{
     display: block;
-    margin-bottom: .25rem;
+    margin-bottom: .2rem;
 }
 
 .projectsTitle{
-    font-size: var(--h2-font-size);
-    margin-bottom: .75rem;
+    font-size: var(--h3-font-size);
+    margin-bottom: .2rem;
 }
 
 .projectsButton{
