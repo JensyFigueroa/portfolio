@@ -120,3 +120,27 @@ img, svg{
 .main{
     overflow: hidden; /* for animations scrollReveal */
 }
+
+.scrollUp{
+    position: fixed;
+    right: 1rem;
+    /* bottom: 3rem; */
+    bottom: -50%;
+    background-color: var(--body-color);
+    padding: 6px;
+    display: inline-flex;
+    border-radius: 1.25rem;
+    color: var(--first-color);
+    font-size: 1.25rem;
+    box-shadow: 0 4px 12px hsla(228%, 15%, 8% .4);
+    z-index: var(--z-tooltip);
+    transition: botton .4s, transform .4s;
+}
+
+.scrollUp:hover {
+    transform: translateY(-.25rem);
+}
+
+.showScroll{
+    bottom: 3rem;
+}
