@@ -261,7 +261,7 @@ const Main = () => {
 
                             <input type="email" name='userEmail' placeholder='Enter your Email' required className={styles.contactInput} />
                             
-                            <textarea className={styles.contactInput}  name="userProject" placeholder='Enter your message' id="" cols="50" rows="10" required></textarea>
+                            <textarea className={styles.contactInput}  name="message" placeholder='Enter your message' id="" cols="50" rows="10" required></textarea>
 
                             <p className="contactMessage" id="contactMessage">{msgSend}
                                 
