@@ -3,15 +3,20 @@ import styles from './Navbar.module.css'
 import { useEffect, useState } from 'react';
 
 export default function Navbar() {
-    const [clickBurguer, setClickBurguer] = useState(true);
+    const [clickBurguer, setClickBurguer] = useState(false);
 
     const [screenSize, setScreenSize] = useState({
         width: window.innerWidth,
     });
 
-    if (screenSize.width < 1024 & clickBurguer) {
-        setClickBurguer(false)
+    const showMenu = () =>{
+        setClickBurguer(!clickBurguer)
     }
+
+    
+    // if (screenSize.width < 1024 && clickBurguer) {
+    //     setClickBurguer(true)
+    // }
 
     useEffect(() => {
         const handleResize = () => {
@@ -25,12 +30,19 @@ export default function Navbar() {
     const handleClick = () => {
         setClickBurguer(!clickBurguer)
     }
+
+    const handleScrollToElement = (e, id) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: "smooth" });
+      };
+    
     return (
         <>
             <nav className={`${styles.nav}`}>
                 <Link to='#' className={styles.logo}>Jensy <span>Figueroa</span></Link>
 
-                <div className={`${styles.navIcon} ${clickBurguer && styles.open }`} onClick={handleClick}>
+                <div className={`${styles.navIcon} ${clickBurguer && styles.open }`} onClick={showMenu}>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -40,22 +52,22 @@ export default function Navbar() {
 
                     <ul className={styles.navList}>
                         <li>
-                            <NavLink to='/' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Home</NavLink>
+                            <NavLink to='#' onClick={(e) => {handleScrollToElement(e, "home"),{handleClick}}} className={({ isActive }) => (isActive ? styles.active : styles.link)} >Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='#about' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>About me</NavLink>
+                            <NavLink to='#' onClick={(e) => {handleScrollToElement(e, "about"), {handleClick}}} className={({ isActive }) => (isActive ? styles.active : styles.link)}>About me</NavLink>
                         </li>
                         <li>
-                            <NavLink to='#repos' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>GitHub Repos</NavLink>
+                            <NavLink to='#' onClick={(e) => {handleScrollToElement(e, "reposGit"), {handleClick}}} className={({ isActive }) => (isActive ? styles.active : styles.link)} >GitHub Repos</NavLink>
                         </li>
                         <li>
-                            <NavLink to='#projects' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Projects </NavLink>
+                            <NavLink to='#' onClick={(e) => {handleScrollToElement(e, "projects"), {handleClick}}} className={({ isActive }) => (isActive ? styles.active : styles.link)} >Projects </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#kills' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Skills</NavLink>
+                            <NavLink to='#' onClick={(e) => {handleScrollToElement(e, "skills"), {handleClick}}} className={({ isActive }) => (isActive ? styles.active : styles.link)}>Skills</NavLink>
                         </li>
                         <li>
-                            <NavLink to='#contact' className={({ isActive }) => (isActive ? styles.active : styles.link)} onClick={handleClick}>Contact</NavLink>
+                            <NavLink to='#' onClick={(e) => {handleScrollToElement(e, "contact"), {handleClick}}} className={({ isActive }) => (isActive ? styles.active : styles.link)}>Contact</NavLink>
                         </li>
                     </ul>
 

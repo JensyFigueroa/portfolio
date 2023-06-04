@@ -4,9 +4,35 @@ import rickMorty from '../../../assets/img/rick&morty.png'
 import videoGames from '../../../assets/img/videoGames.png'
 import workify from '../../../assets/img/workify.png'
 import styles from './Main.module.css'
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 const Main = () => {
-    return (
+    const form = useRef();
+
+    const [msgSend, setMsgSend] = useState('')
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_ifxb97y', 'template_437gwo8', form.current, 'wIiAlyzD36CHSaAQX')
+        .then((result) => {
+            console.log(result.text);
+            setMsgSend('Message sent successfully ✅')
+            setTimeout(()=>{
+                setMsgSend('')
+            }, 3000)
+            form.current.reset()
+        }, (error) => {
+            console.log(error.text);
+            setMsgSend('Message was not sent correctly (server error) ❌')
+            setTimeout(()=>{
+                setMsgSend('')
+            }, 3000)
+        });
+    };
+
+    return (//################### HOME ###############################
         <div className="main">
             <section className={`${styles.home} ${styles.section}`} id="home">
                 <div className={`${styles.homeContainer} container grid`}>
@@ -106,7 +132,7 @@ const Main = () => {
       192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
       580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
       40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
-      175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10" />
+      175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" strokeWidth="10" />
                                 </g>
 
                                 <rect x="37" width="476" height="300" fill="url(#pattern3)" />
@@ -180,7 +206,7 @@ const Main = () => {
             </section>
 
             {/*#########  KILLS ########*/}
-            <section className={`${styles.skills} section`} id="kills">
+            <section className={`${styles.skills} section`} id="skills">
                 <div className={`${styles.skillsContainer} container grid`}>
                     <div className={styles.skillsData}>
                         <h3 className="sectionSubtitle">
@@ -228,7 +254,7 @@ const Main = () => {
                 </h2>
 
                 <div className={`${styles.contactContainer} container grid`}>
-                    <form action="" className={styles.contactForm} id="contactForm">
+                    <form ref={form} onSubmit={sendEmail} action="" className={styles.contactForm} id="contactForm">
                         <div className={styles.contactGroup}>
                             <input type="text" name='userName' placeholder='Enter your name' required className={styles.contactInput} />
 
@@ -236,7 +262,7 @@ const Main = () => {
                             
                             <textarea className={styles.contactInput}  name="userProject" placeholder='Enter your message' id="" cols="50" rows="10" required></textarea>
 
-                            <p className="contactMessage" id="contactMessage">
+                            <p className="contactMessage" id="contactMessage">{msgSend}
                                 
                             </p>
 
