@@ -5,6 +5,7 @@
     /* hsl(216, 98%, 52%); */
     --header-height: 3.5rem;
     /* color */
+    /* color: hsl(184, 60%, 82%); */
     --hue: 216;
     --first-color: hsl(var(--hue), 98%, 52%);
     --first-color-alt: hsl(var(--hue), 56%, 35%);

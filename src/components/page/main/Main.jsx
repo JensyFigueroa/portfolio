@@ -6,6 +6,7 @@ import workify from '../../../assets/img/workify.png'
 import styles from './Main.module.css'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import express from '../../../assets/img/express.svg'
 
 const Main = () => {
     const form = useRef();
@@ -224,20 +225,20 @@ const Main = () => {
                     </div>
                     <div className={styles.skillsContent}>
                         <ol className={styles.skillsGroup}>
-                            <li className={styles.skillsItem}>HTML & CSS</li>
-                            <li className={styles.skillsItem}>Javascript</li>
-                            <li className={styles.skillsItem}>Bootstrap</li>
-                            <li className={styles.skillsItem}>Tailwind</li>
-                            <li className={styles.skillsItem}>React</li>
-                            <li className={styles.skillsItem}>Redux</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#e45f18'}} className="ri-html5-fill"></i> HTML & CSS</li>
+                            <li className={styles.skillsItem}><i  style={{fontSize:'30px', color:'#e4c518'}} className="ri-javascript-fill"></i> Javascript</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#18d0e4'}} className="ri-sketching"></i> Tailwind</li>
+                            <li className={styles.skillsItem}> <i style={{fontSize:'30px', color:'#a018e4'}} className="ri-bootstrap-fill"></i> Bootstrap</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#18d0e4'}} className="ri-reactjs-fill"></i> React</li>
+                            <li className={styles.skillsItem}> <i style={{fontSize:'30px', color:'#a018e4'}} className="fa-solid fa-atom"></i> Redux</li>
                         </ol>
                         <ol className="skillsGroup" >
-                            <li className={styles.skillsItem}>Git & Github</li>
-                            <li className={styles.skillsItem}>Node.js</li>
-                            <li className={styles.skillsItem}>Expresss</li>
-                            <li className={styles.skillsItem}>Sequelize</li>
-                            <li className={styles.skillsItem}>Postgress - MySQL</li>
-                            <li className={styles.skillsItem}>Postman</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px'}} className="ri-github-fill"></i> Git & Github</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#02c94e'}} className="fa-brands fa-node-js"></i> Node.js</li>
+                            <li className={styles.skillsItem}>Express</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#0269c9'}}  className="fa-solid fa-cube"></i> Sequelize</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#95a9ba'}} className="fa-solid fa-database"></i> Postgress - MySQL</li>
+                            <li className={styles.skillsItem}><i style={{fontSize:'30px', color:'#fc7813'}} className="fa-solid fa-person-skating"></i> Postman</li>
                         </ol>
                     </div>
                 </div>
