@@ -218,7 +218,7 @@ const Main = () => {
 
                     <div className={styles.reposList}>
 
-                        <Link className={styles.repoLink}>
+                        <Link to='https://github.com/JensyFigueroa/rick_and_morty' target='_blank'  className={styles.repoLink}>
                             <i className="fa-brands fa-git-alt"></i>
                             <span> rick_and_morty</span>
                             <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
@@ -226,13 +226,13 @@ const Main = () => {
 
 
                         </Link>
-                        <Link className={styles.repoLink}>
+                        <Link to='https://github.com/JensyFigueroa/videogames' target='_blank' className={styles.repoLink}>
                             <i className="fa-brands fa-git-alt"></i>
                             <span> videogames</span>
                             <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
                             <p>Javascript</p>
                         </Link>
-                        <Link className={styles.repoLink}>
+                        <Link to='https://github.com/JensyFigueroa/domesticServices_Frontend' target='_blank' className={styles.repoLink}>
                             <i className="fa-brands fa-git-alt"></i> 
                             <span> domesticServices_Frontend</span>  
                             <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
