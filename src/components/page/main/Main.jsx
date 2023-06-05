@@ -114,7 +114,7 @@ const Main = () => {
                         </h2>
 
                         <p className={styles.aboutDescription}>
-                            I`m a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
+                            I'm a Full Stack developer with a passion for building high-quality, interactive web applications. I have experience developing both frontend and backend using technologies such as React, Redux, Node, Express, Sequelize, Postgres, MySQL, SQL Server, ASP.NET, among others. I excel at creating dynamic and attractive user interfaces, using HTML, CSS and JavaScript. In addition, I am capable in the integration of APIs and external services, as well as in the efficient management of databases. With skills in testing, debugging, and optimization, I am committed to delivering high-quality solutions. I work well in a team and have a strong work ethic to tackle challenges and deliver successful projects.
                         </p>
                         <a href='#contact' className={styles.button}>Contact Me</a>
                         <div className={styles.aboutImage}>

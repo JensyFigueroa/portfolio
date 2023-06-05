@@ -45,7 +45,7 @@ export default function Navbar() {
     return (
         <>
             <nav className={`${styles.nav}`}>
-                <Link to='#' className={styles.logo}>Jensy <span>Figueroa</span></Link>
+                <a href='#home' className={styles.logo}>Jensy <span>Figueroa</span></a>
 
                 <div className={`${styles.navIcon} ${clickBurguer && styles.open}`} onClick={showMenu}>
                     <span></span>
