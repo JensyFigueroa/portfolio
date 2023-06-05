@@ -234,7 +234,7 @@ const Main = () => {
                         </Link>
                         <Link to='https://github.com/JensyFigueroa/domesticServices_Frontend' target='_blank' className={styles.repoLink}>
                             <i className="fa-brands fa-git-alt"></i> 
-                            <span> domesticServices_Frontend</span>  
+                            <span> workify</span>  
                             <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
                             <p>Javascript</p>
                         </Link>
@@ -245,7 +245,7 @@ const Main = () => {
 
             {/*#########  KILLS ########*/}
             <section className={`${styles.skills} section`} id="skills" >
-                <div className={`${styles.skillsContainer} container grid`}>
+                <div className={`${styles.skillsContainer} container`}>
                     <div className={styles.skillsData}>
                         <h3 className="sectionSubtitle">
                             Favorite <span>Skills</span>

@@ -127,8 +127,11 @@
 }
 
 .reposList{
-    display: flex;
-    gap: 10px;
+    /* display: flex;
+    gap: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem
 }
 
 .repoLink{
@@ -247,7 +250,8 @@
 
 .skillsContainer{
     padding-bottom: 2rem;
-    row-gap: 3.5rem;
+    row-gap: 2.5rem;
+    
 }
 
 .skillsData{
@@ -264,13 +268,18 @@
 }
 
 .skillsContent{
-    grid-template-columns: repeat(2, max-content);
+    /* grid-template-columns: repeat(2, max-content);
     column-gap: 4rem;
     justify-content: center;
-    align-items: baseline;
+    align-items: baseline; */
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
 }
 
 .skillsGroup{
+    margin-top: 40px;
     row-gap: 1rem; 
 }
 
