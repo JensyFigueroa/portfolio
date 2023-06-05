@@ -6,7 +6,6 @@ import workify from '../../../assets/img/workify.png'
 import styles from './Main.module.css'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
-import express from '../../../assets/img/express.svg'
 
 const Main = () => {
     const form = useRef();

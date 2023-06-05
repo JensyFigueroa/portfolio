@@ -6,6 +6,10 @@ import Main from './components/page/main/Main'
 import Footer from './components/page/footer/Footer'
 import './index.css'
 import { useEffect } from 'react'
+import ReactGA from 'react-ga'
+
+const TRACKING_ID = 'G-FY3CZ12DNC';
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
