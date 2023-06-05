@@ -45,7 +45,10 @@ export default function Navbar() {
     return (
         <>
             <nav className={`${styles.nav}`}>
-                <a href='#home' className={styles.logo}>Jensy <span>Figueroa</span></a>
+          
+                <a href='#home' className={`${styles.logo} s`}><h2 className="sectionSubtitle">
+                    Jensy<span>Figueroa</span>
+                </h2></a>
 
                 <div className={`${styles.navIcon} ${clickBurguer && styles.open}`} onClick={showMenu}>
                     <span></span>
@@ -63,10 +66,10 @@ export default function Navbar() {
                             <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "about"), { handleClick } }} className={idActive === 'about' ? styles.active : styles.link}>About me</NavLink>
                         </li>
                         <li>
-                            <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "reposGit"), { handleClick } }} className={idActive === 'reposGit' ? styles.active : styles.link} >GitHub Repos</NavLink>
+                            <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "projects"), { handleClick } }} className={idActive === 'projects' ? styles.active : styles.link} >Projects </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "projects"), { handleClick } }} className={idActive === 'projects' ? styles.active : styles.link} >Projects </NavLink>
+                            <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "reposGit"), { handleClick } }} className={idActive === 'reposGit' ? styles.active : styles.link} >GitHub Repos</NavLink>
                         </li>
                         <li>
                             <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "skills"), { handleClick } }} className={idActive === 'skills' ? styles.active : styles.link}>Skills</NavLink>
