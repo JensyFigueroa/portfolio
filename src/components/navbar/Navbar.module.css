@@ -21,7 +21,7 @@
 }
 
 .link {
-    color: var(--title-color);
+    color: var(--first-color);
     font-weight: var(--font-medium);
     transition: color .4s;
 }
@@ -34,7 +34,7 @@
     border-top: 2px solid hsl(216, 98%, 52%);
     border-bottom: 2px solid hsl(216, 98%, 52%);
     /* border-bottom: 2px solid rgb(0, 238, 255); */
-    color: hsl(216, 100%, 39%);;
+    color: hsl(0, 0%, 100%);;
 
 }
 

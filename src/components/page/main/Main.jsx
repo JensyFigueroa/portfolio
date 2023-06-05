@@ -40,11 +40,11 @@ const Main = () => {
                     <div className={styles.homeContent}>
                         <div className={styles.homeData}>
                             <div className={styles.homeSubtitle}>
-                                <h3>Hello, <span>I`m</span></h3>
+                                <h3>Hello, <span>I'm</span></h3>
                                 <h1 className={styles.homeTitle}>Jensy Figueroa</h1>
                                 <h2 className={styles.homeEducation}>Full Stack Developer</h2>
                                 <p className={styles.homeDescription}>
-                                With knowledge in web development, with the most used technologies in the market, to be able to offer the best projects with quality results.
+                                    With knowledge in web development, with the most used technologies in the market, to be able to offer the best projects with quality results.
                                 </p>
 
                                 <a href="#contact" className={styles.button}>Let's talk</a>
@@ -200,12 +200,51 @@ const Main = () => {
             </section>
 
             {/*#########  REPO GITHUB ########*/}
-            <section className="reposGit section" id="reposGit">
+            <section className={`${styles.reposGit} section`} id="reposGit">
+                <div className={`${styles.reposContainer} container grid`}>
+                    <div className={styles.reposData}>
+                        <h3 className="sectionSubtitle">
+                            My <span>Repositories</span>
+                        </h3>
 
-            </section>
+                        <h2 className="sectionTitle">
+                            Github
+                        </h2>
+
+                        <p className={styles.reposDescription}>
+                            See my recent Projects
+                        </p>
+                    </div>
+
+                    <div className={styles.reposList}>
+
+                        <Link className={styles.repoLink}>
+                            <i className="fa-brands fa-git-alt"></i>
+                            <span> rick_and_morty</span>
+                            <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
+                            <p>Javascript</p>
+
+
+                        </Link>
+                        <Link className={styles.repoLink}>
+                            <i className="fa-brands fa-git-alt"></i>
+                            <span> videogames</span>
+                            <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
+                            <p>Javascript</p>
+                        </Link>
+                        <Link className={styles.repoLink}>
+                            <i className="fa-brands fa-git-alt"></i> 
+                            <span> domesticServices_Frontend</span>  
+                            <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
+                            <p>Javascript</p>
+                        </Link>
+
+                    </div>
+                </div>
+            </section >
 
             {/*#########  KILLS ########*/}
-            <section className={`${styles.skills} section`} id="skills">
+            <section className={`${styles.skills} section`} id="skills" >
                 <div className={`${styles.skillsContainer} container grid`}>
                     <div className={styles.skillsData}>
                         <h3 className="sectionSubtitle">
@@ -219,10 +258,14 @@ const Main = () => {
                         <p className={styles.skillsDescription}>
                             See fully my skills to develop the projects for you
                         </p>
-                        <Link to="#projects" className={styles.button}>See projects</Link>
+                        <a href="#projects" className={styles.button}>See projects</a>
                     </div>
                     <div className={styles.skillsContent}>
+
                         <ol className={styles.skillsGroup}>
+                            <h2 className="sectionSubtitle">
+                                <span>Frontend</span> Technologies
+                            </h2>
                             <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#e45f18' }} className="ri-html5-fill"></i> HTML & CSS</li>
                             <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#e4c518' }} className="ri-javascript-fill"></i> Javascript</li>
                             <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#18d0e4' }} className="ri-sketching"></i> Tailwind</li>
@@ -230,7 +273,11 @@ const Main = () => {
                             <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#18d0e4' }} className="ri-reactjs-fill"></i> React</li>
                             <li className={styles.skillsItem}> <i style={{ fontSize: '30px', color: '#a018e4' }} className="fa-solid fa-atom"></i> Redux</li>
                         </ol>
-                        <ol className="skillsGroup" >
+
+                        <ol className={styles.skillsGroup} >
+                            <h2 className="sectionSubtitle">
+                                <span>Backend</span> Technologies
+                            </h2>
                             <li className={styles.skillsItem}><i style={{ fontSize: '30px' }} className="ri-github-fill"></i> Git & Github</li>
                             <li className={styles.skillsItem}><i style={{ fontSize: '30px', color: '#02c94e' }} className="fa-brands fa-node-js"></i> Node.js</li>
                             <li className={styles.skillsItem}>Express</li>
@@ -243,7 +290,7 @@ const Main = () => {
             </section>
 
             {/*#########  CONTACT ########*/}
-            <section className="contact section" id="contact">
+            <section className="contact section" id="contact" >
                 <h3 className="sectionSubtitle">
                     Get in <span>Touch</span>
                 </h3>
@@ -272,7 +319,7 @@ const Main = () => {
                     </form>
                 </div>
             </section>
-        </div>
+        </div >
     )
 }
 

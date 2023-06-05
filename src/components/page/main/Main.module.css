@@ -112,6 +112,52 @@
 }
 
 /* ########### GitRepos ########### */
+.reposGit{
+    display: flex;
+    justify-content: center;
+}
+
+.reposContainer{
+    width: 90%;
+}
+
+
+.reposDescription{
+    text-align: center;
+}
+
+.reposList{
+    display: flex;
+    gap: 10px;
+}
+
+.repoLink{
+    width: 100%;
+    border: 1px solid  var(--text-color);
+    border-radius: 5px;
+}
+
+.repoLink i, span {
+    margin-left: 15px;
+    color: var(--first-color);
+}
+
+.repoLink p {
+    color: var(--text-color);
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.repoLink p:nth-child(4):before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #d8d800;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 15px;
+}
 
 
 
@@ -196,6 +242,7 @@
 /* ########### Skills ########### */
 .skills{
     border-color: var(--container-color);
+    background-color: var(--container-color);
 }
 
 .skillsContainer{

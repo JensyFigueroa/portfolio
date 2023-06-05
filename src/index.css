@@ -109,7 +109,7 @@ img, svg{
     margin-bottom: 1.5rem;
 }
 .sectionSubtitle{
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     margin-bottom: .25rem;
 }
 
