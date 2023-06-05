@@ -58,7 +58,7 @@
 
 .linkSocial{
     display: flex;
-    background: var(--first-color-alt);
+    background: var(--first-color);
     padding: .5rem;
     color: var(--title-color);
     font-size: 1.5rem;
@@ -67,8 +67,10 @@
 }
 
 .linkSocial:hover{
+    background-color: var(--first-color-alt);
     transform: translateY(-.25rem);
 }
+
 
 .homeImage{
      justify-self: center;
