@@ -172,7 +172,7 @@ const Main = () => {
                         <div className={styles.projectsModal}>
                             <span className={styles.projectsSubtitle}>Web</span>
                             <h2 className={styles.projectsTitle}>Modern website</h2>
-                            <Link to='#' className={styles.projectsButton} target="_blank" >View demo <i className="ri-external-link-line"></i></Link>
+                            <Link to='https://rick-and-morty-iota-jade.vercel.app/' className={styles.projectsButton} target="_blank" >View demo <i className="ri-external-link-line"></i></Link>
                         </div>
                     </article>
 
