@@ -27,15 +27,17 @@
 }
 
 .link:hover {
-    color: var(--first-color);
+    border-top: 2px solid hsl(216, 98%, 52%);
+    border-bottom: 2px solid hsl(216, 98%, 52%);
+    /* border-bottom: 2px solid rgb(0, 238, 255); */
+    color: hsl(0, 0%, 100%);
 }
 
 .active {
     border-top: 2px solid hsl(216, 98%, 52%);
     border-bottom: 2px solid hsl(216, 98%, 52%);
     /* border-bottom: 2px solid rgb(0, 238, 255); */
-    color: hsl(0, 0%, 100%);;
-
+    color: hsl(0, 0%, 100%);
 }
 
 /* ###############  navIcon ##########################*/
