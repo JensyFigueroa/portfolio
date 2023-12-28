@@ -1,0 +1,28 @@
+.menu{
+    background-color: rgb(43, 46, 59);;
+}
+.link {
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    transition: color .4s;
+}
+
+.link:hover {
+    border-top: 2px solid hsl(216, 98%, 52%);
+    border-bottom: 2px solid hsl(216, 98%, 52%);
+    /* border-bottom: 2px solid rgb(0, 238, 255); */
+    color: hsl(0, 0%, 100%);
+}
+
+.linkMenu {
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    transition: color .4s;
+}
+
+.linkMenu:hover {
+    border-top: 2px solid hsl(216, 98%, 52%);
+    border-bottom: 2px solid hsl(216, 98%, 52%);
+    /* border-bottom: 2px solid rgb(0, 238, 255); */
+    color: hsl(0, 0%, 3%);
+}

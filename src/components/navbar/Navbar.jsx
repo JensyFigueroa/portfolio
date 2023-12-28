@@ -1,6 +1,7 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css'
 import { useEffect, useState } from 'react';
+import Resumen from '../cv/Resumen';
 
 export default function Navbar() {
     const [clickBurguer, setClickBurguer] = useState(false);
@@ -76,6 +77,10 @@ export default function Navbar() {
                         </li>
                         <li>
                             <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "contact"), { handleClick } }} className={idActive === 'contact' ? styles.active : styles.link}>Contact</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='#' onClick={(e) => { handleScrollToElement(e, "resumen"), { handleClick } }} className={idActive === 'resumen' ? styles.active : styles.link}><Resumen/>
+                            </NavLink> 
                         </li>
                     </ul>
 
