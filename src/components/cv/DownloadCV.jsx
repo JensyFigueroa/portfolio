@@ -27,7 +27,6 @@ export default function BasicMenu() {
       setLenguangeCV('Spanish')
       window.open('assets/cv/CV-English.pdf', '_blank');
     }    
-
   };
 
   return (
