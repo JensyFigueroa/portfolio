@@ -28,7 +28,6 @@ export default function BasicMenu() {
       window.open('/src/assets/cv/CV-English.pdf', '_blank');
     }    
 
-    
   };
 
   return (
