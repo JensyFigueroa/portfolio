@@ -36,7 +36,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path="/download-cv" component={DownloadCV} />
+        <Route path="/src/assets/cv" component={DownloadCV} />
       </Routes>
       <Footer />
 
