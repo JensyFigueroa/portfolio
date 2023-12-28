@@ -7,7 +7,6 @@ import Footer from './components/page/footer/Footer'
 import './index.css'
 import { useEffect } from 'react'
 import ReactGA from 'react-ga'
-import DownloadCV from '../src/components/cv/DownloadCV.jsx'
 
 const TRACKING_ID = 'G-FY3CZ12DNC';
 ReactGA.initialize(TRACKING_ID);
