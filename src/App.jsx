@@ -7,6 +7,7 @@ import Footer from './components/page/footer/Footer'
 import './index.css'
 import { useEffect } from 'react'
 import ReactGA from 'react-ga'
+import DownloadCV from '../src/components/cv/DownloadCV.jsx'
 
 const TRACKING_ID = 'G-FY3CZ12DNC';
 ReactGA.initialize(TRACKING_ID);
@@ -35,6 +36,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path="/download-cv" component={DownloadCV} />
       </Routes>
       <Footer />
 
