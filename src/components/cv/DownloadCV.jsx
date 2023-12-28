@@ -22,10 +22,10 @@ export default function BasicMenu() {
     
     if (lenguangeCV === 'Spanish') {
       setLenguangeCV('English')
-      window.open('/assets/cv/CV-Spanish.pdf', '_blank');
+      window.open('/cv/CV-Spanish.pdf', '_blank');
     }else{
       setLenguangeCV('Spanish')
-      window.open('/assets/cv/CV-English.pdf', '_blank');
+      window.open('/cv/CV-English.pdf', '_blank');
     }    
   };
 
