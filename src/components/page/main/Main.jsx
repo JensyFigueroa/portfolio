@@ -3,6 +3,7 @@ import photo from './img/Photo.png'
 import rickMorty from '../../../assets/img/rick&morty.png'
 import videoGames from '../../../assets/img/videoGames.png'
 import workify from '../../../assets/img/workify.png'
+import todo from '../../../assets/img/todo-list.png'
 import styles from './Main.module.css'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
@@ -165,6 +166,18 @@ const Main = () => {
                 </h2>
 
                 <div className={`${styles.projectsContainter} container`}>
+                    
+                    <article className={styles.projectsCard}>
+
+                        <img src={todo} alt="todo" className={styles.projectsImg} />
+
+                        <div className={styles.projectsModal}>
+                            <span className={styles.projectsSubtitle}>Web</span>
+                            <h2 className={styles.projectsTitle}>Modern website</h2>
+                            <Link to='https://todo-reto-frontend-mentor.netlify.app/' className={styles.projectsButton} target="_blank" >View demo <i className="ri-external-link-line"></i></Link>
+                        </div>
+                    </article>
+
                     <article className={styles.projectsCard}>
 
                         <img src={rickMorty} alt="rick & morty" className={styles.projectsImg} />
@@ -217,14 +230,19 @@ const Main = () => {
 
                     <div className={styles.reposList}>
 
+                        <Link to='https://github.com/JensyFigueroa/toDo-Reto-Frontendmentor-Vite-Tailwind' target='_blank'  className={styles.repoLink}>
+                            <i className="fa-brands fa-git-alt"></i>
+                            <span>toDo-Reto-Frontendmentor-Vite-Tailwind</span>
+                            <p>Project in which the following technologies were used: React, Redux, Node, Tailwind</p>
+                            <p>Javascript</p>
+                        </Link>
                         <Link to='https://github.com/JensyFigueroa/rick_and_morty' target='_blank'  className={styles.repoLink}>
                             <i className="fa-brands fa-git-alt"></i>
                             <span> rick_and_morty</span>
                             <p>Project in which the following technologies were used: React, Redux, Node, Express, Sequelize, Postgres</p>
                             <p>Javascript</p>
-
-
                         </Link>
+                        
                         <Link to='https://github.com/JensyFigueroa/videogames' target='_blank' className={styles.repoLink}>
                             <i className="fa-brands fa-git-alt"></i>
                             <span> videogames</span>
