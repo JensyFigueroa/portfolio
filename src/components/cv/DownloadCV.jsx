@@ -21,10 +21,10 @@ export default function BasicMenu() {
     // Ejemplo:
     
     if (lenguangeCV === 'Spanish') {
-      setLenguangeCV('English')
+      setLenguangeCV('Spanish')
       window.open('/cv/CV-Spanish.pdf', '_blank');
     }else{
-      setLenguangeCV('Spanish')
+      setLenguangeCV('English')
       window.open('/cv/CV-English.pdf', '_blank');
     }    
   };
