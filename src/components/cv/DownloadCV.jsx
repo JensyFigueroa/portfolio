@@ -5,7 +5,6 @@ import styles from './DownloadCV.module.css'
 import { useState } from 'react';
 
 export default function BasicMenu() {
-  const [lenguangeCV, setLenguangeCV] = useState('Spanish')
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -15,16 +14,14 @@ export default function BasicMenu() {
     setAnchorEl(null);
   };
 
-  const handleDownload = () => {
+  const handleDownload = (lenguangeCV) => {
     // Lógica para la descarga del CV en PDF
     // Puedes usar una biblioteca como FileSaver.js o simplemente un enlace directo al archivo PDF
     // Ejemplo:
     
     if (lenguangeCV === 'Spanish') {
-      setLenguangeCV('Spanish')
       window.open('/cv/CV-Spanish.pdf', '_blank');
     }else{
-      setLenguangeCV('English')
       window.open('/cv/CV-English.pdf', '_blank');
     }    
   };
@@ -51,10 +48,10 @@ export default function BasicMenu() {
         }}
       >
         <MenuItem onClick={handleClose}>
-            <Link className={styles.linkMenu} onClick={handleDownload}>Spanish</Link>
+            <Link className={styles.linkMenu} onClick={() => { handleDownload('Spanish')}}>Spanish</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-            <Link className={styles.linkMenu} onClick={handleDownload}>English</Link>
+            <Link className={styles.linkMenu} onClick={() => { handleDownload('English')}} >English</Link>
         </MenuItem>
       </Menu>
     </div>
